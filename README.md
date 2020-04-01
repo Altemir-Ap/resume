@@ -1,2 +1,3 @@
-# resume
-Initiale resume project for HDIP
+# WebDev Assignment
+
+Resume page for WebDev CA1 at CCT
