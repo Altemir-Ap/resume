@@ -1,5 +1,6 @@
 const profile = document.querySelector('.profile');
 
+/*Object which contains the profile information*/
 const profileObj = {
     name: 'Altemir Almeida',
     email: 'altemirap25@gmail.com',
@@ -13,6 +14,7 @@ const profileObj = {
 
 }
 
+/*function that add the information object into the homepage*/
 let addProfile = () => {
     var template = `
             <ul class="profile-data">
@@ -36,6 +38,5 @@ let addProfile = () => {
     profile.insertAdjacentHTML("beforeend", template)
 }
 
-
-
+/* Function call */
 addProfile();
