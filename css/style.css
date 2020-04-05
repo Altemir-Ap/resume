@@ -61,7 +61,7 @@ body{
     display: flex;
     justify-content: space-around;
     margin-top: 2%;
-    margin-bottom: 10%;   
+    margin-bottom: 5%;   
 }
 
 .icons{
@@ -84,6 +84,11 @@ body{
     color: #495c6a;    
 }
 .item:hover{
+    background: #495c6a;
+    color: #c1f1dc;
+}
+
+.active{
     background: #495c6a;
     color: #c1f1dc;
 }
@@ -157,7 +162,7 @@ td{
     margin-left: -10px;
 }
 
-@media only screen and (max-width: 620px){
+@media only screen and (max-width: 791px){
     .pages{
         display:flex;
         flex-direction: column;
@@ -172,7 +177,7 @@ td{
         margin: 7px;
     }
     .work-item{
-        max-width: 60%;
+        max-width: 70%;
     }
 }
 
