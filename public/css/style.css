@@ -1,0 +1,404 @@
+body {
+    font-family: 'Anonymous Pro', monospace, Arial;
+    margin: 0px;
+    background: #f5f5f5;
+    color: #495c6a;
+}
+
+
+/*--------- Flex-box properties ----------*/
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+
+/*--------- End flex-box properties ----------*/
+
+
+/*--------- Profile css properties ----------*/
+
+.profile,
+.menu {
+    text-align: center;
+}
+
+.no-bottom {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #c1f1dc;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.topnav a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    color: #495c6a;
+}
+
+.menu-links li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.menu-links {
+    display: flex;
+    margin: 0px;
+    flex-wrap: wrap;
+}
+
+.menu-links li a {
+    display: block;
+    padding: 10px;
+}
+
+ul .circle {
+    border-radius: 20%;
+}
+
+.responsive {
+    margin-top: 10%;
+    height: auto;
+}
+
+.img-profile {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 100%;
+    height: auto;
+    max-width: 40px;
+}
+
+.icons {
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+
+.profile-data {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.summary {
+    max-width: 45%;
+    margin: 0px 30%;
+}
+
+
+/*--------- End profile css properties ----------*/
+
+
+/*--------- Global css properties (used in 2 or more pages) ----------*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.pages {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.item {
+    margin: 5px;
+    background: #c1f1dc;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 10px 35px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #495c6a;
+}
+
+.menu-links li a:hover {
+    background: #495c6a;
+    color: #c1f1dc;
+}
+
+.active {
+    background: #495c6a;
+    color: #c1f1dc !important;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 10px 8px -6px #82898C;
+    -moz-box-shadow: 0 10px 8px -6px #82898C;
+    box-shadow: 0 10px 8px -6px #82898C;
+}
+
+.skill-summary {
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #c1f1dc;
+    justify-content: center;
+    text-align: justify;
+}
+
+span>p {
+    margin-top: 0;
+}
+
+
+/*--------- Work and Education css properties ----------*/
+
+.header-work {
+    text-align: center;
+}
+
+.work {
+    margin: 0px 10%;
+    width: 70%;
+    justify-content: center;
+}
+
+.work-table th {
+    border-bottom: 1px #f5f5f5 solid;
+}
+
+.work-item {
+    background: linear-gradient(135deg, #4488ee, #7DABFB);
+    margin: 10px;
+    max-width: 30%;
+    border-radius: 15px;
+    padding: 5px;
+    color: #f5f5f5;
+}
+
+td {
+    padding: 3px;
+}
+
+.project-list {
+    margin-top: 8px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.project-list>li {
+    padding-bottom: 2px;
+}
+
+.project-list>li:before {
+    content: '\2011';
+    position: absolute;
+    margin-left: -10px;
+}
+
+
+/*--------- End work and education css properties ----------*/
+
+
+/*--------- End global css properties ----------*/
+
+
+/*--------- Skill css properties ----------*/
+
+.skill {
+    margin: 0px 20%;
+    max-width: 60%;
+}
+
+.skill-item {
+    margin: 20px;
+    text-align: center;
+    background-color: #ffffff4d;
+    border-radius: 15px;
+    padding: 2px;
+    color: #495c6a;
+}
+
+
+/*--------- End Skill css properties ----------*/
+
+
+/*--------- Login css properties --------*/
+
+.center-align {
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.login-form {
+    background-color: #c1f1dc;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+input[type=submit] {
+    background-color: #fff;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+label[for=password] {
+    margin-top: 10px;
+    display: block;
+}
+
+input[type=text],
+input[type=password] {
+    color: #7DABFB;
+    border-radius: 4px;
+}
+
+
+/*--------- End Login Pages -----------*/
+
+
+/*--------- Media queries ----------*/
+
+@media only screen and (max-width: 791px) {
+    .pages {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4%;
+    }
+    .summary {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .item {
+        flex: 1;
+        margin: 7px;
+    }
+    .work-item {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (min-width: 621px) and (max-width:790px) {
+    .work-item {
+        max-width: 50%;
+    }
+}
+
+#department {
+    display: none;
+}
+
+#button-table {
+    background: linear-gradient(135deg, #4488ee, #7DABFB);
+    border-radius: 15px;
+    padding: 8px;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-family: 'Anonymous Pro', monospace, Arial;
+    ;
+}
+
+#myInput {
+    background-image: url('../css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 20%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#no-register {
+    display: none;
+    margin: 5px auto;
+}
+
+#logo {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.db-table {
+    flex: 1;
+    text-align: center;
+}
+
+#employee-table,
+#dept {
+    margin: 15px auto;
+    background: linear-gradient(135deg, #4488ee, #7DABFB);
+    margin: 15px auto;
+    width: 60%;
+    border-radius: 15px;
+    padding: 5px;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+button[type=submit] {
+    background: linear-gradient(135deg, #4488ee, #7DABFB);
+    border-radius: 15px;
+    padding: 8px;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-family: 'Anonymous Pro', monospace, Arial;
+    border: none;
+}
+
+input[type=text],
+input[type=password] {
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+}
+
+#login-button {
+    width: 100%;
+}
+
+#research {
+    display: block;
+    background-color: #0202028c;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    color: #fff;
+    padding: 9px 18px;
+    margin-top: 20px;
+    margin: 5px auto;
+}
+
+.swal-text {
+    text-align: justify;
+}
+
+.swal-title {
+    margin: 0px;
+    font-size: 23px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+    margin-bottom: 28px;
+}
